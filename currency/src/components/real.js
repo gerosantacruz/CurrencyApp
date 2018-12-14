@@ -16,15 +16,19 @@ class Real extends Component {
       `https://free.currencyconverterapi.com/api/v6/convert?q=BRL_ARS&compact=y`
     )
       .then(res => res.json())
-      .then(data => this.setState({ cambio: data.BRL_ARS.val }));
+      .then(data => this.setState({ cambio: data.BRL_ARS.val.toFixed(2) }));
+
+      setTimeout(() => {
+        this.setState({time:true})
+      }, 3000)
 
     console.log(this.state.cambio);
   }
 
   render() {
     return (
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           {" "}
           <img src={icon} alt="Brasilian flag" />
             Real: R$ 1 = {this.state.cambio}$

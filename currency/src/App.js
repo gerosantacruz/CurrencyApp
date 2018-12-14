@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <div className="App-Body">
           <h1>Cotizaciones de monedas extranjeras</h1>
           <h3>Pesos Argentinos (ARS)</h3>
           <div>
@@ -24,7 +24,7 @@ class App extends Component {
           <Real />
         </div>
   
-        </header>
+        </div>
         </div>
         
     );

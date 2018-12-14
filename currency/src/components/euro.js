@@ -14,16 +14,16 @@ class Euro extends Component {
         const source = 'USD';*/
     fetch(`https://free.currencyconverterapi.com/api/v6/convert?q=EUR_ARS&compact=y`)
       .then(res => res.json())
-      .then(data => this.setState({ cambio: data.EUR_ARS.val }));
+      .then(data => this.setState({ cambio: data.EUR_ARS.val.toFixed(2) }));
 
     console.log(this.state.cambio);
   }
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         
-        <div class="row"><img src={icon} alt="European flag"/>   Euro: €1 = {this.state.cambio} $</div>
+        <div className="row"><img src={icon} alt="European flag"/>   Euro: €1 = {this.state.cambio} $</div>
       </div>
     );
   }
