@@ -12,7 +12,7 @@ to used, you only have to dowload the project,then, go to the terminal,
 naviigate to the folder, where is the app
 
 ```
-cd my-app
+cd currency
 npm start
 
 ```
