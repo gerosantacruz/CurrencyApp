@@ -12,8 +12,7 @@ class App extends Component {
         <header className="App-header">
           <h1>Cotizaciones de monedas extranjeras</h1>
           <h3>Pesos Argentinos (ARS)</h3>
-        </header>
-        <div>
+          <div>
           <Dolar />
         </div>
         <br />
@@ -24,7 +23,10 @@ class App extends Component {
         <div>
           <Real />
         </div>
-      </div>
+  
+        </header>
+        </div>
+        
     );
   }
 }
