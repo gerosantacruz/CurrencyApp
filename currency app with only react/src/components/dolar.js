@@ -12,9 +12,6 @@ class Dolar extends Component {
     };
   }
   componentDidMount() {
-    /*const access_key = '984160642c25c44b6e5a0c5b85780bda';
-        const currencies = 'EUR,GBP,CAD,PLN';
-        const source = 'USD';*/
     fetch(
       `https://free.currencyconverterapi.com/api/v6/convert?q=USD_ARS&compact=y`
     )
