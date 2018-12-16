@@ -3,8 +3,8 @@ const morgan= require('morgan');
 const app = express();
 const path = require('path')
 
+//this file configure and start the server
 //setting
-
 app.set('port', process.env.PORT || 3000);
 
 
